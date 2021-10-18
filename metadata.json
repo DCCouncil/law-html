@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "build": {
+      "build-date": "2021-10-18",
+      "codified-date": "2021-10-18",
+      "platform": {
+        "reproducible": "false",
+        "version": "2.3.2"
+      },
+      "repositories": [
+        {
+          "commit": "2b33a74e35e5f7333e28d658334422a7329b6165",
+          "name": "DCCouncil/law-xml"
+        },
+        {
+          "commit": "fae43afd3dfe0bd2c11e188c01c660d2799c6818",
+          "name": "DCCouncil/law-xml-codified"
+        }
+      ]
+    },
+    "canonical-urls": {
+      "html": "https://code.dccouncil.us",
+      "html-bulk": "https://github.com/dccouncil/law-html",
+      "static-assets": "https://github.com/dccouncil/law-static-assets",
+      "xml-bulk": "https://github.com/dccouncil/law-xml"
+    },
+    "contact": {
+      "email": "code@dccouncil.us"
+    },
+    "description": "Browse the laws and code of the District of Columbia",
+    "redirects": [
+      {
+        "in": "/dc/council",
+        "out": "/us/dc/council"
+      }
+    ]
+  }
+}

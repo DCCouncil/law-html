@@ -1,0 +1,29 @@
+######################
+# OS generated files #
+######################
+*/.DS_Store
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+sh.exe.stackdump
+.sass-cache/*
+node_modules/*
+
+#############################
+# Override parent gitignore #
+#############################
+
+!*.css.map
+!*.js.map
+
+# DOT files
+!*.png
+!*.pdf
+!*.svg
+
+# static assets
+static-assets/*
