@@ -24,6 +24,7 @@ import urllib.parse
 import urllib.request
 import webbrowser
 from http.server import HTTPServer, SimpleHTTPRequestHandler
+from socketserver import ThreadingMixIn
 
 if getattr(sys, 'frozen', False):
     DIR = os.path.dirname(sys.executable)
@@ -307,6 +308,10 @@ def get_http_client_info(upstream_name, url):
     print('PROXYING: "/_{}" to {}'.format(upstream_name, url))
     return Client, host
 
+class ThreadedHTTPServer(ThreadingMixIn, HTTPServer):
+    """
+        This class allows to handle requests in separated threads.
+    """
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -332,7 +337,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     server_address = (args.bind, args.port)
 
-    httpd = HTTPServer(server_address, RequestHandler)
+    httpd = ThreadedHTTPServer(server_address, RequestHandler)
 
     raw_redirects = []
     try:
