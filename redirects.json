@@ -24,6 +24,10 @@
     "/us/dc/council/laws/19-311"
   ],
   [
+    "/us/dc/council/acts/20-148",
+    "/us/dc/council/laws/20-34"
+  ],
+  [
     "/us/dc/council/acts/20-242",
     "/us/dc/council/laws/20-76"
   ],
@@ -4178,5 +4182,65 @@
   [
     "/us/dc/council/acts/24-727",
     "/us/dc/council/laws/24-289"
+  ],
+  [
+    "/us/dc/council/acts/24-728",
+    "/us/dc/council/laws/24-290"
+  ],
+  [
+    "/us/dc/council/acts/24-757",
+    "/us/dc/council/laws/24-291"
+  ],
+  [
+    "/us/dc/council/acts/24-776",
+    "/us/dc/council/laws/24-292"
+  ],
+  [
+    "/us/dc/council/acts/24-729",
+    "/us/dc/council/laws/24-293"
+  ],
+  [
+    "/us/dc/council/acts/24-730",
+    "/us/dc/council/laws/24-294"
+  ],
+  [
+    "/us/dc/council/acts/24-758",
+    "/us/dc/council/laws/24-295"
+  ],
+  [
+    "/us/dc/council/acts/24-783",
+    "/us/dc/council/laws/24-296"
+  ],
+  [
+    "/us/dc/council/acts/24-731",
+    "/us/dc/council/laws/24-298"
+  ],
+  [
+    "/us/dc/council/acts/24-784",
+    "/us/dc/council/laws/24-299"
+  ],
+  [
+    "/us/dc/council/acts/24-785",
+    "/us/dc/council/laws/24-300"
+  ],
+  [
+    "/us/dc/council/acts/24-733",
+    "/us/dc/council/laws/24-301"
+  ],
+  [
+    "/us/dc/council/acts/24-734",
+    "/us/dc/council/laws/24-302"
+  ],
+  [
+    "/us/dc/council/acts/24-735",
+    "/us/dc/council/laws/24-303"
+  ],
+  [
+    "/us/dc/council/acts/24-736",
+    "/us/dc/council/laws/24-304"
+  ],
+  [
+    "/us/dc/council/acts/24-777",
+    "/us/dc/council/laws/24-305"
   ]
 ]
