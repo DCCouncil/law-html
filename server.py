@@ -41,7 +41,10 @@ with open('metadata.json') as f:
 
 CANONICAL_URLS = VERSION_INFO.get('meta', {}).get('canonical-urls', {})
 
-DEFAULT_SEARCH_URL = CANONICAL_URLS.get('html')
+DEFAULT_SEARCH_URL = CANONICAL_URLS.get('html', {})
+if isinstance(DEFAULT_SEARCH_URL, dict):
+    DEFAULT_SEARCH_URL = DEFAULT_SEARCH_URL.get('current', {})
+
 STATIC_ASSETS_REPO_URL = CANONICAL_URLS.get('static-assets')
 if DEFAULT_SEARCH_URL is None or STATIC_ASSETS_REPO_URL is None:
     print("'<html>' and '<static-assets>' tags are required in law-xml/index.xml under '<canonical-urls>'.")
@@ -199,6 +202,7 @@ class RequestHandler(SimpleHTTPRequestHandler):
             return self._proxy(PORTAL_CLIENT_CLASS, PORTAL_HOST, 'portal')
 
         if self.path.startswith('/_search'):
+            print(SEARCH_HOST)
             return self._proxy(SEARCH_CLIENT_CLASS, SEARCH_HOST, 'search')
 
         redirect = self.server.redirects.get(self.path)
@@ -287,7 +291,7 @@ class RequestHandler(SimpleHTTPRequestHandler):
     def address_string(self):
         """
         This function is used for logging. We comment out getfqdn because,
-        on windows, getfqdn is very slow - it will make multiple DNS 
+        on windows, getfqdn is very slow - it will make multiple DNS
         requests that each time out after many seconds.
         """
         host, _ = self.client_address[:2]
