@@ -1,8 +1,8 @@
 {
   "meta": {
     "build": {
-      "build-date": "2024-04-16",
-      "codified-date": "2024-04-16",
+      "build-date": "2024-04-21",
+      "codified-date": "2024-04-21",
       "platform": {
         "reproducible": "true",
         "version": "2.13.4"
@@ -10,11 +10,11 @@
       "publication": "publication/2021-10-18",
       "repositories": [
         {
-          "commit": "baf3b02ac0703890786541b6c92acf60468ae738",
+          "commit": "360a5efbc5fb6b4e5f6ed4bc672d7b73db0ee6b5",
           "name": "DCCouncil/law-xml"
         },
         {
-          "commit": "f5296770cecccd2968732e6d5b8bf37242a74473",
+          "commit": "3860ed3544b7f38ca02268c5e978992dfab3d520",
           "name": "DCCouncil/law-xml-codified"
         }
       ]
