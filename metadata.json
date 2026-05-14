@@ -1,8 +1,8 @@
 {
   "meta": {
     "build": {
-      "build-date": "2026-05-11",
-      "codified-date": "2026-05-11",
+      "build-date": "2026-05-14",
+      "codified-date": "2026-05-14",
       "platform": {
         "reproducible": "false",
         "version": "2.12.10"
@@ -10,17 +10,17 @@
       "publication": "publication/2021-10-18",
       "repositories": [
         {
-          "commit": "c7bd6ab1392f6a803256ac10a94d4da0efa77bb7",
+          "commit": "8ed94678776342d054989cf4e4071596ec4a25f7",
           "name": "DCCouncil/law-xml"
         },
         {
-          "commit": "0b011253333460ff92adf7fdc15571e77b2b4276",
+          "commit": "feee047db19abece72068be57cd71c89e7e7fdcb",
           "name": "DCCouncil/law-xml-codified"
         }
       ]
     },
     "canonical-urls": {
-      "html": "https://code.dccouncil.us",
+      "html": "https://code.dccouncil.gov",
       "html-bulk": "https://github.com/dccouncil/law-html",
       "law-git": "https://github.com/dccouncil/law.git",
       "static-assets": "https://github.com/dccouncil/law-static-assets",
